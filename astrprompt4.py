@@ -6,9 +6,6 @@
 # of the class to print out and describe the data members representing the physical characteristics
 # of the animal.
 
-a = "My favorite animal is a dog."
-print(a)
-print(type(a))
 
 class Dog:
     def __init__(self, arm_length: float, leg_length: float, num_eyes: int, has_tail: bool, is_furry: bool):
@@ -25,6 +22,10 @@ class Dog:
         print(f"Number of eyes: {self.num_eyes}")
         print(f"Has a tail: {'Yes' if self.has_tail else 'No'}")
         print(f"Is furry: {'Yes' if self.is_furry else 'No'}")
+def main():
+    perrito = Dog(arm_length=8.0, leg_length=15.0, num_eyes=2, has_tail=True, is_furry=True)
+    perrito.describe()
 
-my_dog = Dog(arm_length=8.0, leg_length=15.0, num_eyes=2, has_tail=True, is_furry=True)
+if __name__ == "__main__":
+    main()
 
